@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary-color:#508991;
+$primary-hover:#396469;
+$secondary-color:#FEC923;
+$back-color:#FBFBFB;
+$text-color:#111111;
+
+.background-color{
+    background-color: $back-color;
+}
+.primary-text{
+    color:$primary-color
+}
+.primary-bg{
+    background-color: $primary-color;
+}
+.hover-text:hover{
+    color: $primary-color;
+
+}
+.primary-bg:hover{
+background-color: $primary-hover;
+}
+.transparent-btn{
+background-color: transparent;
+border: 1px solid $primary-color;
+
+}
+.transparent-btn:hover{
+    background-color: $primary-color;
+    color: $back-color;
+}
+.text-color{
+    color: $text-color;
+
+}
+body{
+    background-color: $back-color;
+
+}
