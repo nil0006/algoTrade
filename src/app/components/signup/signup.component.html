@@ -1,1 +1,204 @@
-<p>signup works!</p>
+<section
+  class="border-red-500  bg-gray-200 min-h-screen flex items-center justify-center"
+>
+  <div class="bg-gray-100 my-6 p-5 flex rounded-2xl shadow-lg max-w-6xl">
+    <div class="md:w-2/3 px-5">
+      <h2 class="text-2xl font-bold text-color">Sign Up</h2>
+      <p class="text-sm mt-4 text-color">
+        If you don't have an account, please register
+      </p>
+      <form class="mt-6" action="#" method="POST">
+        <div class="flex sm:flex-row flex-col">
+          <div class="w-full mt-4">
+            <label class="block text-gray-700">Name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter Name"
+              class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+              autofocus
+              autocomplete
+              required
+            />
+          </div>
+          <div class="sm:ml-3 w-full mt-4">
+            <label class="block text-gray-700">Email Address</label>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter Email Address"
+              class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+              autofocus
+              autocomplete
+              required
+            />
+          </div>
+        </div>
+        <div class="flex sm:flex-row flex-col">
+          <div class="w-full mt-4">
+            <label class="block text-gray-700">Contact No</label>
+            <input
+              type="number"
+              name=""
+              id=""
+              placeholder="Contact Number"
+              class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+              autofocus
+              autocomplete
+              required
+            />
+          </div>
+          <div class="sm:ml-3 w-full mt-4">
+            <label for="countries" class="block text-gray-700"
+            >Select an option</label
+          >
+          <select
+            id="countries"
+            class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+          >
+            <option selected>Choose Profession</option>
+            <option value="WF">Working professional</option>
+            <option value="STU">Student</option>
+          </select>
+          </div>
+        </div>
+        
+        <div class="flex sm:flex-row flex-col "> 
+
+            <div class="w-full mt-4">
+                <label class="block text-gray-700">City</label>
+                <select
+                id="countries"
+                class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+              >
+                <option selected>Choose City</option>
+                <option value="WF">Working professional</option>
+                <option value="STU">Student</option>
+              </select>
+              </div>
+              <div class="sm:ml-3 w-full mt-4">
+                <label class="block text-gray-700">Country</label>
+                <select
+                id="countries"
+                class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+              >
+                <option selected>Choose Country</option>
+                <option value="WF">Working professional</option>
+                <option value="STU">Student</option>
+              </select>
+              </div>
+              <div class="sm:ml-3 mt-4 w-full">
+                <label class="block text-gray-700">Pincode</label>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="Enter Pincode"
+                  minlength="6"
+                  class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+                  required
+                />
+              </div>
+        </div>
+
+        <div class="flex sm:flex-row flex-col  "> 
+        <div class="w-full mt-4">
+          <label class="block text-gray-700">Password</label>
+          <input
+            type="password"
+            name=""
+            id=""
+            placeholder="Enter Password"
+            minlength="6"
+            class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+            required
+          />
+        </div>
+        <div class="sm:ml-3 w-full mt-4">
+          <label class="block text-gray-700"> Confirm Password</label>
+          <input
+            type="confirm password"
+            name=""
+            id=""
+            placeholder="Enter Password"
+            minlength="6"
+            class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border border-color focus:bg-white focus:outline-none"
+            required
+          />
+        </div>
+    </div>
+        <div class="w-full flex justify-center items-center"> 
+        <button
+          type="submit"
+          class=" sm:w-1/2 w-full block primary-bg focus:bg-blue-400 text-white font-semibold rounded-lg px-4 py-3 mt-6"
+        >
+          Sign Up
+        </button>
+    </div>
+      </form>
+
+      <div class="mt-7 grid grid-cols-3 items-center text-gray-500">
+        <hr class="border-gray-500" />
+        <p class="text-center text-sm">OR</p>
+        <hr class="border-gray-500" />
+      </div>
+
+      <button
+        class="bg-white border py-2 w-full rounded-lg mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          class="w-6 h-6"
+          viewBox="0 0 48 48"
+        >
+          <defs>
+            <path
+              id="a"
+              d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"
+            />
+          </defs>
+          <clipPath id="b">
+            <use xlink:href="#a" overflow="visible" />
+          </clipPath>
+          <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z" />
+          <path
+            clip-path="url(#b)"
+            fill="#EA4335"
+            d="M0 11l17 13 7-6.1L48 14V0H0z"
+          />
+          <path
+            clip-path="url(#b)"
+            fill="#34A853"
+            d="M0 37l30-23 7.9 1L48 0v48H0z"
+          />
+          <path
+            clip-path="url(#b)"
+            fill="#4285F4"
+            d="M48 48L17 24l-4-3 35-10z"
+          />
+        </svg>
+        <span class="ml-4">Sign-Up with Google</span>
+      </button>
+
+      <div class="text-sm flex justify-between items-center mt-3">
+        <p>Already have an account...</p>
+        <button
+          class="py-2 px-5 ml-3 bg-white border rounded-lg hover:scale-110 duration-300 transparent-btn primary-text"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+
+    <div class="w-1/3 md:flex hidden justify-center items-center">
+      <img
+        src="https://images.unsplash.com/photo-1579226905180-636b76d96082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+        class="rounded-2xl"
+        alt="page img"
+      />
+    </div>
+  </div>
+</section>
