@@ -8,7 +8,9 @@ $primary-hover:#396469;
 $secondary-color:#FEC923;
 $back-color:#FBFBFB;
 $text-color:#111111;
-
+html {
+  scroll-behavior: smooth;
+}
 .background-color{
     background-color: $back-color;
 }
@@ -32,6 +34,7 @@ transition: all 0.5s;
 }
 .transparent-btn{
 background-color: transparent;
+color: $primary-color;
 border: 2px solid $primary-color;
 transition: all 0.5s;
 
@@ -544,8 +547,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .container{
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -2620,3 +2623,13 @@ body {
   }
 }
 
+.plan-hover{
+  transition: all 0.5s;
+}
+.plan-hover :hover{
+  transition: all 0.5s;
+
+  transform: scale(1.03);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
