@@ -1,0 +1,39 @@
+section{
+  display: flex;
+  margin: 5rem 1.875rem;
+}
+
+/* Firt Section */
+.first{
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+}
+.first .svgs{
+  display: flex;
+}
+.first h2{
+  color: #FF2951;
+}
+.first .svg-icon{
+  width: 8.125rem;
+}
+.first .svg-icon1{
+  width: 6.25rem;
+}
+.first .content{
+  width: 40%;
+  padding: 5rem;
+}
+.first .content p{
+  font-family: Poppins;
+  font-weight: 500;
+}
+.first .content-img{
+  width: 60%;
+  text-align: center;
+}
+.first .content-img img{
+  width: 70%;
+  margin-left: 9.375rem;
+  border-top-left-radius: 15%;
+}
