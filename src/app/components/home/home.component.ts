@@ -11,4 +11,10 @@ export class HomeComponent {
   routeToAbout(){
     this.router.navigate([''],{fragment: 'about'})
   }
+  routeTocourse(courseType:string){
+    let params={
+      type:courseType
+    }
+    this.router.navigate(['course-details'],courseType?{queryParams:params}:{})
+  }
 }
