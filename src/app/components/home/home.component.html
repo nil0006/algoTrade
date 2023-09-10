@@ -23,15 +23,16 @@
 <section class="dark:bg-gray-800 dark:text-gray-100">
   <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
     <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-      <h1 class="text-5xl font-bold leadi sm:text-6xl">Ac mattis
-        <span class="dark:text-violet-400">senectus</span>erat pharetra
+      <h1 class="text-5xl font-bold leadi sm:text-6xl">Trade
+        <span class="text-primary">Smarter,</span> Not Harder
       </h1>
-      <p class="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
-        <br class="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem
+      <p class="mt-6 mb-8 text-lg sm:mb-12">Do you want to improve trading efficiency, increase execution speed, reduce
+        transaction costs, and implement complex trading strategies that may be difficult to execute manually in time.
+        That too by doing your regular job!
       </p>
       <div
         class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-        <button class="px-8 py-3 m-2 text-lg font-semibold rounded primary-bg text-white">Get started</button>
+        <button class="px-8 py-3 m-2 text-lg font-semibold rounded primary-bg text-white">Get Course</button>
         <button class="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"
           (click)="routeToAbout()">Learn more</button>
       </div>
@@ -44,106 +45,7 @@
 </section>
 
 
-<!-- ====== About Section Start -->
-<section id="about" class="w-full py-10 justify-center">
-  <div class="container">
-    <div class="flex flex-wrap -mx-4">
-      <div class="w-full  px-4">
-        <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[620px]">
 
-          <h2 class="
-                  font-bold
-                  text-3xl
-                  sm:text-4xl
-                  md:text-[40px]
-                  
-                  mb-4
-                  text-primary
-                ">
-            About us
-          </h2>
-          <p class="
-                  text-lg
-                  sm:text-xl
-                  leading-relaxed
-                  sm:leading-relaxed
-                  text-body-color
-                ">
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap -mx-4">
-      <div class="w-full">
-        <div class="
-                  lg:flex
-                  items-center
-                  justify-between
-                 
-                  overflow-hidden
-                ">
-          <div class="
-                    lg:max-w-[565px]
-                    xl:max-w-[640px]
-                    w-full
-                    py-6
-                    px-3
-                   
-                   
-                  ">
-            <h2 class="
-                      font-bold
-                      text-3xl
-                      sm:text-4xl
-                      2xl:text-[40px]
-                      sm:leading-snug
-                      text-dark
-                      mb-6
-                    ">
-              Brilliant Toolkit to Build Nextgen Website Faster.
-            </h2>
-            <p class="text-base text-body-color mb-9 leading-relaxed">
-              The main ‘thrust' is to focus on educating attendees on how
-              to best protect highly vulnerable business applications with
-              interactive panel discussions and roundtables led by subject
-              matter experts.
-            </p>
-            <p class="text-base text-body-color mb-9 leading-relaxed">
-              The main ‘thrust' is to focus on educating attendees on how
-              to best protect highly vulnerable business applications with
-              interactive panel.
-            </p>
-            <a href="javascript:void(0)" class="
-                    
-                      inline-flex
-                      items-center
-                      justify-center
-                      py-4
-                      px-6
-                      rounded-lg
-                      text-white
-                      bg-primary
-                      text-base
-                      font-medium
-                      hover:bg-opacity-90 hover:shadow-lg
-                      transition
-                      duration-300
-                      ease-in-out
-                      sm:w-1/2 w-full
-                    ">
-              Learn More
-            </a>
-          </div>
-          <div class="text-center">
-            <div class="relative inline-block z-10 p-6">
-              <img src="../../../assets/undraw_team_page_re_cffb.svg" alt="image" class="mx-auto lg:ml-auto" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="pricing" class="justify-center
       ">
@@ -161,7 +63,7 @@
           mb-4
           text-primary
                 ">
-            Course Prices
+            Courses
           </h2>
           <p class="
                   text-lg
@@ -170,7 +72,6 @@
                   sm:leading-relaxed
                   text-body-color
                 ">
-            There are Two variations of courses of Algo Trading available.
           </p>
         </div>
       </div>
@@ -198,10 +99,10 @@
               " data-wow-delay=".15s
               ">
           <span class="text-dark font-medium text-base uppercase block mb-2">
-            Algo Trading using Python
+            Algo Trading
           </span>
           <h2 class="font-semibold text-primary mb-9 text-[28px]">
-            ₹8000
+            ₹10000
           </h2>
 
           <div class="mb-10">
@@ -313,7 +214,7 @@
             text-primary
             text-xl
             underline
-                  ">
+                  " (click)="routeTocourse('noPython')">
               Know More
             </a>
 
@@ -353,7 +254,7 @@
               " data-wow-delay=".15s
               ">
           <span class="text-dark font-medium text-base uppercase block mb-2">
-            Algo Trading plus Python
+            Python + Algo Trading
           </span>
           <h2 class="font-semibold text-primary mb-9 text-[28px]">
             ₹15000
@@ -459,7 +360,7 @@
             text-primary
             text-xl
             underline
-                  ">
+                  " (click)="routeTocourse('')">
               Know More
             </a>
 
@@ -476,6 +377,107 @@
                   bg-secondary
                 ">
           </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== About Section Start -->
+<section id="about" class="w-full py-10 justify-center">
+  <div class="container">
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full  px-4">
+        <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[620px]">
+
+          <h2 class="
+                  font-bold
+                  text-3xl
+                  sm:text-4xl
+                  md:text-[40px]
+                  
+                  mb-4
+                  text-primary
+                ">
+            About us
+          </h2>
+          <p class="
+                  text-lg
+                  sm:text-xl
+                  leading-relaxed
+                  sm:leading-relaxed
+                  text-body-color
+                ">
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full">
+        <div class="
+                  lg:flex
+                  items-center
+                  justify-between
+                 
+                  overflow-hidden
+                ">
+          <div class="
+                    lg:max-w-[565px]
+                    xl:max-w-[640px]
+                    w-full
+                    py-6
+                    px-3
+                   
+                   
+                  ">
+            <h2 class="
+                      font-bold
+                      text-3xl
+                      sm:text-4xl
+                      2xl:text-[40px]
+                      sm:leading-snug
+                      text-dark
+                      mb-6
+                    ">
+              Brilliant Toolkit to Build Nextgen Website Faster.
+            </h2>
+            <p class="text-base text-body-color mb-9 leading-relaxed">
+              The main ‘thrust' is to focus on educating attendees on how
+              to best protect highly vulnerable business applications with
+              interactive panel discussions and roundtables led by subject
+              matter experts.
+            </p>
+            <p class="text-base text-body-color mb-9 leading-relaxed">
+              The main ‘thrust' is to focus on educating attendees on how
+              to best protect highly vulnerable business applications with
+              interactive panel.
+            </p>
+            <a href="javascript:void(0)" class="
+                    
+                      inline-flex
+                      items-center
+                      justify-center
+                      py-4
+                      px-6
+                      rounded-lg
+                      text-white
+                      bg-primary
+                      text-base
+                      font-medium
+                      hover:bg-opacity-90 hover:shadow-lg
+                      transition
+                      duration-300
+                      ease-in-out
+                      sm:w-1/2 w-full
+                    ">
+              Learn More
+            </a>
+          </div>
+          <div class="text-center">
+            <div class="relative inline-block z-10 p-6">
+              <img src="../../../assets/undraw_team_page_re_cffb.svg" alt="image" class="mx-auto lg:ml-auto" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -514,43 +516,169 @@
   </div>
   <section class="mb-32" id="contact">
 
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap  w-full">
 
       <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-7/12 md:px-3 lg:px-6">
         <h2 class="mb-8 text-3xl font-bold">Frequently asked questions</h2>
-        <p class="mb-2 font-bold"></p>
-        <p class="mb-8 text-neutral-500 dark:text-neutral-300">
 
-        </p>
-        <p class="mb-2 font-bold">Non cupidatat skateboard dolor brunch?</p>
-        <p class="mb-8 text-neutral-500 dark:text-neutral-300">
-          Distinctio corporis, iure facere ducimus quos consectetur ipsa ut
-          magnam autem doloremque ex! Id, sequi. Voluptatum magnam sed fugit
-          iusto minus et suscipit? Minima sunt at nulla tenetur, numquam
-          unde quod modi magnam ab deserunt ipsam sint aliquid dolores
-          libero repellendus cupiditate mollitia quidem dolorem odit
-        </p>
-        <p class="mb-2 font-bold">
-          Praesentium voluptatibus temporibus consequatur non aspernatur?
-        </p>
-        <p class="mb-8 text-neutral-500 dark:text-neutral-300">
-          Minima sunt at nulla tenetur, numquam unde quod modi magnam ab
-          deserunt ipsam sint aliquid dolores libero repellendus cupiditate
-          mollitia quidem dolorem.
-        </p>
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-1">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+              aria-controls="accordion-collapse-body-1">
+              <span>1.What is algorithmic trading?</span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">Algorithmic trading, also known as algo-trading, is a
+                method of executing trades using automated computer programs. It has made trading systematic and
+                error-free. Human errors like giving wrong inputs have been completely eliminated by algo-trading.</p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-2">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+              aria-controls="accordion-collapse-body-2">
+              <span>2.How does algorithmic trading work?</span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+            <div class="p-5 border border-b-0 border-gray-200 ">
+              <p class="mb-2 text-gray-500 "> Algorithmic trading uses mathematical models and historical data to
+                analyze market conditions and execute trades. Algorithms can make decisions on buying, selling, or
+                holding assets</p>
 
-        <p class="mb-2 font-bold">
-          Voluptatum magnam sed fugit iusto minus et suscipit?
-        </p>
-        <p class="text-neutral-500 dark:text-neutral-300">
-          Laudantium perferendis, est alias iure ut veniam suscipit dolorem
-          fugit. Et ipsam corporis earum ea ut quae cum non iusto blanditiis
-          ipsum dolor eius reiciendis, velit adipisci quas.
-        </p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-3">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+              aria-controls="accordion-collapse-body-3">
+              <span>3.What are the benefits of algorithmic trading?
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+            <div class="p-5 border border-b-0 border-gray-200 ">
+              <p class="mb-2 text-gray-500 ">Benefits include faster execution, reduced human error, lower transaction
+                costs, increased trading efficiency, and the ability to implement complex trading strategies.</p>
+
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-4">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+              aria-controls="accordion-collapse-body-4">
+              <span>4.Do you teach programming and then algorithmic trading?
+
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+            <div class="p-5 border border-b-0 border-gray-200 ">
+              <p class="mb-2 text-gray-500 "> We have two courses. <br>1. <a href="#courses"
+                  class="primary-text underline">Algo Trading</a>: Here we teach how to implement your strategies and
+                automate the trade with Python. Note: Prerequisite: Python knowledge.<br>
+                2. <a href="#courses" class="primary-text underline">Python + Algo Trading</a>: Python is taught from
+                scratch and later everything implementation of automated algo. </p>
+
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-5">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+              aria-controls="accordion-collapse-body-5">
+              <span>5.What’s the course fees?
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+            <div class="p-5 border border-b-0 border-gray-200 ">
+              <p class="mb-2 text-gray-500 ">Algo Trading: Rs 10000/- <br>
+                Python + Algo Trading: Rs 15000/-</p>
+
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-6">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-6" aria-expanded="false"
+              aria-controls="accordion-collapse-body-6">
+              <span> 6.Does it provide a certificate?
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+            <div class="p-5 border border-b-0 border-gray-200 ">
+              <p class="mb-2 text-gray-500 "> No, we are running a knowledge guarantee programme. We make sure every
+                learner is capable of implementing its strategies after completing the courses. </p>
+
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-7">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100"
+              data-accordion-target="#accordion-collapse-body-7" aria-expanded="false"
+              aria-controls="accordion-collapse-body-7">
+              <span> 7.Do you teach strategies as well?
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
+            <div class="p-5 border border-b-0 border-gray-200 ">
+              <p class="mb-2 text-gray-500 ">No, we don’t teach any strategy. Any strategy taught in class is purely to
+                show how to implement and automate trade.</p>
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
       <div class="w-full shrink-0 grow-0 basis-auto md:w-5/12 md:px-3 lg:px-6">
-        <p class="mb-8 font-bold">
-          Didn't find your answer in the FAQ? Contact our sales
+        <p class="mb-8 text-3xl font-bold">
+          Having more queries?  Contact Us
         </p>
         <form>
           <div class="w-full mt-4">
